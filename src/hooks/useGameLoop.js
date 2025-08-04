@@ -46,7 +46,7 @@ export const useGameLoop = ({
       // Ball falls below paddle - lose life
       if (wallCollisions.bottom) {
         loseLife();
-        if (stats.lives > 0) {
+        if (stats.lives > 1) {
           setBall(createBall());
         } else {
           setGameState(GAME_STATES.GAME_OVER);
