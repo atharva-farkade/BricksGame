@@ -1,0 +1,33 @@
+/* BrickBreaker Component Styles */
+.brick-breaker {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+.game-container {
+  position: relative;
+  max-width: 100%;
+  width: fit-content;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .brick-breaker {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brick-breaker {
+    padding: 5px;
+  }
+}

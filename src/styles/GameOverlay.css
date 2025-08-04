@@ -1,0 +1,74 @@
+/* GameOverlay Component Styles */
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  padding: 32px;
+  background-color: rgba(31, 41, 55, 0.9);
+  border-radius: 16px;
+  border: 1px solid #4b5563;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.overlay-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.overlay-text {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #d1d5db;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 32px;
+  }
+  
+  .overlay-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-title {
+    font-size: 24px;
+  }
+  
+  .overlay-content {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+/* LivesDisplay Component Styles */
+.lives-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heart {
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease;
+}
+
+.heart:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .heart {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heart {
+    font-size: 18px;
+  }
+}

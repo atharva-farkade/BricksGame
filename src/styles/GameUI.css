@@ -1,0 +1,36 @@
+/* GameUI Component Styles */
+.game-ui {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #374151;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+  margin-top: 24px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.instructions p {
+  margin-bottom: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .game-header {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,25 @@
+/* GameCanvas Component Styles */
+.game-canvas {
+  border: 2px solid #4b5563;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  background-color: #1f2937;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive canvas */
+@media (max-width: 768px) {
+  .game-canvas {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-canvas {
+    max-width: 320px;
+  }
+}

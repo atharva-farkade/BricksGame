@@ -1,0 +1,86 @@
+/* GameControls Component Styles */
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .game-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}

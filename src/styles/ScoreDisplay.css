@@ -1,0 +1,43 @@
+/* ScoreDisplay Component Styles */
+.score-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+.score-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .score-label {
+    font-size: 16px;
+  }
+  
+  .score-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .score-label {
+    font-size: 14px;
+  }
+  
+  .score-value {
+    font-size: 18px;
+  }
+}
