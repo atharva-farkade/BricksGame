@@ -3,6 +3,7 @@ import { GAME_STATES } from '../utils/constants.js';
 import '../styles/GameOverlay.css';
 
 const GameOverlay = ({ gameState, stats, onStart, onRestart }) => {
+  // Interface Segregation Principle (ISP): Component only needs overlay-related props
   
   if (!['start', 'gameOver', 'win', 'paused'].includes(gameState)) {
     return null;

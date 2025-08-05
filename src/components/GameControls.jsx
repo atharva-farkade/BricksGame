@@ -2,7 +2,7 @@ import React from 'react';
 import { GAME_STATES } from '../utils/constants.js';
 import '../styles/GameControls.css';
 
-const GameControls = ({ gameState, onStart, onPause, onRestart }) => {
+const GameControls = ({ gameState, onPause, onRestart }) => {
   
   if (gameState === GAME_STATES.PLAYING) {
     return (

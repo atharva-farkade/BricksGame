@@ -32,12 +32,14 @@ const GameCanvas = ({ width, height, ball, paddle, bricks }) => {
   }, [width, height, ball, paddle, bricks]);
 
   return (
+    <div data-testid="game-canvas">
     <canvas
       ref={canvasRef}
       width={width}
       height={height}
       className="game-canvas"
     />
+    </div>
   );
 };
 

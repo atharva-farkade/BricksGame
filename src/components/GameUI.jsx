@@ -7,7 +7,7 @@ import '../styles/GameUI.css';
 
 const GameUI = ({ gameState, stats, onStart, onPause, onRestart }) => {
   return (
-    <div className="game-ui">
+    <div className="game-ui" data-testid="game-ui">
       {/* Header with score and lives */}
       <div className="game-header">
         <ScoreDisplay score={stats.score} />

@@ -80,7 +80,7 @@ const BrickBreaker = () => {
 
   return (
     <div className="brick-breaker">
-      <div className="game-container" onMouseMove={handleMouseMove}>
+      <div className="game-container"  role="presentation" onMouseMove={handleMouseMove}>
         <GameCanvas
           width={GAME_CONFIG.CANVAS_WIDTH}
           height={GAME_CONFIG.CANVAS_HEIGHT}
