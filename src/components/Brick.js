@@ -7,7 +7,6 @@ const Brick = ({ brick, ctx }) => {
   ctx.fillStyle = brick.color;
   ctx.fillRect(brick.x, brick.y, brick.width, brick.height);
   
-  // Add border for better visibility
   ctx.strokeStyle = '#374151';
   ctx.lineWidth = 1;
   ctx.strokeRect(brick.x, brick.y, brick.width, brick.height);

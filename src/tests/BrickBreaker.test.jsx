@@ -18,6 +18,5 @@ describe('BrickBreaker Component', () => {
     render(<BrickBreaker />);
     const startButton = screen.getByText(/start/i);
     fireEvent.click(startButton);
-    // You can add more assertions based on game state changes
   });
 });

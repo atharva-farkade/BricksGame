@@ -1,4 +1,3 @@
-// Single Responsibility Principle (SRP): This module has one responsibility - managing game constants
 export const GAME_CONFIG = {
   CANVAS_WIDTH: 800,
   CANVAS_HEIGHT: 600,
@@ -23,7 +22,7 @@ export const GAME_STATES = {
 };
 
 export const BRICK_COLORS = [
-  { color: '#ef4444', points: 30 }, // Red - highest points
-  { color: '#f97316', points: 20 }, // Orange - medium points
-  { color: '#22c55e', points: 10 }, // Green - lowest points
+  { color: '#ef4444', points: 30 }, 
+  { color: '#f97316', points: 20 }, 
+  { color: '#22c55e', points: 10 },
 ];

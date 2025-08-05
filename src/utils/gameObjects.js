@@ -1,7 +1,5 @@
-// Single Responsibility Principle (SRP): Each factory function creates one type of game object
 import { GAME_CONFIG, BRICK_COLORS } from './constants.js';
 
-// Factory pattern for creating game objects
 export const createBall = () => ({
   x: GAME_CONFIG.CANVAS_WIDTH / 2,
   y: GAME_CONFIG.CANVAS_HEIGHT - 100,
